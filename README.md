@@ -1,9 +1,9 @@
 # Create a GitHub Action Using TypeScript
 
-![Linter](https://github.com/actions/typescript-action/actions/workflows/linter.yml/badge.svg)
-![CI](https://github.com/actions/typescript-action/actions/workflows/ci.yml/badge.svg)
-![Check dist/](https://github.com/actions/typescript-action/actions/workflows/check-dist.yml/badge.svg)
-![CodeQL](https://github.com/actions/typescript-action/actions/workflows/codeql-analysis.yml/badge.svg)
+![Linter](https://github.com/Unity-Billal-mesloub/typescript-action/actions/workflows/linter.yml/badge.svg)
+![CI](https://github.com/Unity-Billal-mesloub/typescript-action/actions/workflows/ci.yml/badge.svg)
+![Check dist/](https://github.com/Unity-Billal-mesloub/typescript-action/actions/workflows/check-dist.yml/badge.svg)
+![CodeQL](https://github.com/Unity-Billal-mesloub/typescript-action/actions/workflows/codeql-analysis.yml/badge.svg)
 ![Coverage](./badges/coverage.svg)
 
 Use this template to bootstrap the creation of a TypeScript action. :rocket:
@@ -12,7 +12,7 @@ This template includes compilation support, tests, a validation workflow,
 publishing, and versioning guidance.
 
 If you are new, there's also a simpler introduction in the
-[Hello world JavaScript action repository](https://github.com/actions/hello-world-javascript-action).
+[Hello world JavaScript action repository](https://github.com/Unity-Billal-mesloub/hello-world-javascript-action).
 
 ## Create Your Own Action
 
@@ -40,8 +40,7 @@ need to perform some initial setup steps before you can develop your action.
 >
 > You'll need to have a reasonably modern version of
 > [Node.js](https://nodejs.org) handy (20.x or later should work!). If you are
-> using a version manager like [`nodenv`](https://github.com/nodenv/nodenv) or
-> [`fnm`](https://github.com/Schniz/fnm), this template has a `.node-version`
+> using a version manager, this template has a `.node-version`
 > file at the root of the repository that can be used to automatically switch to
 > the correct version when you `cd` into the repository. Additionally, this
 > `.node-version` file is used by GitHub Actions in any `actions/setup-node`
@@ -106,7 +105,7 @@ There are a few things to keep in mind when writing your action code:
   ```
 
   For more information about the GitHub Actions toolkit, see the
-  [documentation](https://github.com/actions/toolkit/blob/main/README.md).
+  [documentation](https://github.com/Unity-Billal-mesloub/toolkit/blob/main/README.md).
 
 So, what are you waiting for? Go ahead and start customizing your action!
 
@@ -131,7 +130,7 @@ So, what are you waiting for? Go ahead and start customizing your action!
 
 1. (Optional) Test your action locally
 
-   The [`@github/local-action`](https://github.com/github/local-action) utility
+   The [`@github/local-action`](https://github.com/Unity-Billal-mesloub/local-action) utility
    can be used to test your action locally. It is a simple command-line tool
    that "stubs" (or simulates) the GitHub Actions Toolkit. This way, you can run
    your TypeScript action locally without having to commit and push your changes
@@ -175,7 +174,7 @@ So, what are you waiting for? Go ahead and start customizing your action!
 Your action is now published! :rocket:
 
 For information about versioning your action, see
-[Versioning](https://github.com/actions/toolkit/blob/main/docs/action-versioning.md)
+[Versioning](https://github.com/Unity-Billal-mesloub/toolkit/blob/main/docs/action-versioning.md)
 in the GitHub Actions toolkit.
 
 ## Validate the Action
@@ -202,13 +201,13 @@ steps:
 ```
 
 For example workflow runs, check out the
-[Actions tab](https://github.com/actions/typescript-action/actions)! :rocket:
+[Actions tab](https://github.com/Unity-Billal-mesloub/typescript-action/actions)! :rocket:
 
 ## Usage
 
 After testing, you can create version tag(s) that developers can use to
 reference different stable versions of your action. For more information, see
-[Versioning](https://github.com/actions/toolkit/blob/main/docs/action-versioning.md)
+[Versioning](https://github.com/Unity-Billal-mesloub/toolkit/blob/main/docs/action-versioning.md)
 in the GitHub Actions toolkit.
 
 To include the action in a workflow in another repository, you can use the
@@ -259,47 +258,5 @@ following steps:
    to create a new release in GitHub so users can easily reference the new tags
    in their workflows.
 
-## Dependency License Management
 
-This template includes a GitHub Actions workflow,
-[`licensed.yml`](./.github/workflows/licensed.yml), that uses
-[Licensed](https://github.com/licensee/licensed) to check for dependencies with
-missing or non-compliant licenses. This workflow is initially disabled. To
-enable the workflow, follow the below steps.
-
-1. Open [`licensed.yml`](./.github/workflows/licensed.yml)
-1. Uncomment the following lines:
-
-   ```yaml
-   # pull_request:
-   #   branches:
-   #     - main
-   # push:
-   #   branches:
-   #     - main
-   ```
-
-1. Save and commit the changes
-
-Once complete, this workflow will run any time a pull request is created or
-changes pushed directly to `main`. If the workflow detects any dependencies with
-missing or non-compliant licenses, it will fail the workflow and provide details
-on the issue(s) found.
-
-### Updating Licenses
-
-Whenever you install or update dependencies, you can use the Licensed CLI to
-update the licenses database. To install Licensed, see the project's
-[Readme](https://github.com/licensee/licensed?tab=readme-ov-file#installation).
-
-To update the cached licenses, run the following command:
-
-```bash
-licensed cache
-```
-
-To check the status of cached licenses, run the following command:
-
-```bash
-licensed status
 ```
